@@ -1,6 +1,162 @@
-$color-primary: purple;
+@import "../styles/variables";
+
+/*--- GLOBALS ---*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
 
 body {
-  font-family: 'Josefin Sans';
-  color: $color-primary;
+  background-color: $color-primary;
+}
+
+hr {
+  box-sizing: content-box;
+  margin: 4rem auto;
+  height: 0;
+  width: 8rem;
+  border: 0;
+  border: 0.5px solid rgba($color-secondary, 0.2);
+}
+
+/*--- TYPOGRAPHY ---*/
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+a {
+  color: $color-secondary;
+}
+
+a.link-primary {
+  text-decoration: none;
+  color: $color-tertiary;
+
+  &:hover,
+  &:active {
+    border-bottom: 0.4rem solid $color-tertiary;
+    transition: border-bottom 0.2s ease;
+  }
+}
+
+/*--- STRUCTURE AND BACKGROUND ---*/
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba($color-primary, 1), rgba($color-primary, 1)),
+    url("../images/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: hard-light;
+  font: normal 1.6rem/1.25 $font-secondary, sans-serif;
+  font-weight: 300;
+  color: $color-secondary;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  }
+
+  &::after {
+    content: "";
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.wrapper__inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 2;
+  max-width: 80%;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33.7rem;
+    height: 33.7rem;
+    left: 50%;
+    top: 50%;
+    margin-left: -16.8rem;
+  }
+}
+
+.triangle-pattern {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../images/triangles.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.03;
+}
+
+/*--- MEDIA QUERIES ---*/
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+
+  .wrapper-inner {
+    margin-top: -20%;
+
+    &:before {
+      width: 20rem;
+      height: 20rem;
+      margin-left: -10rem;
+      margin-top: -10rem;
+    }
+  }
 }

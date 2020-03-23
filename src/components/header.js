@@ -1,23 +1,27 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div>
-      <h1>
-        <Link to="/">{siteTitle}</Link>
-      </h1>
-    </div>
-  </header>
+import "./header.scss"
+
+const ListLink = props => (
+  <li>
+    <Link to={props.to} activeClassName="active">
+      {props.children}
+    </Link>
+  </li>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
+const Header = () => (
+  <nav class="navigation-wrapper">
+    <ul class="site-nav">
+      <ListLink to="/">Home</ListLink>
+      <ListLink to="/about">About</ListLink>
+      <ListLink to="/now">Now</ListLink>
+      <ListLink to="/resume">Resume</ListLink>
+      <ListLink to="/projects">Projects</ListLink>
+      <ListLink to="/blog">Blog</ListLink>
+    </ul>
+  </nav>
+)
 
 export default Header
