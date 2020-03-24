@@ -1,0 +1,112 @@
+@import "../styles/variables";
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+.bio__avatar {
+  figure {
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    margin: 0 auto;
+
+    animation: bounceIn 0.75s ease-in;
+    animation-fill-mode: backwards;
+
+    img {
+      width: 10rem;
+      height: 10rem;
+      backface-visibility: hidden;
+      transition: all 0.5s;
+      border-radius: 50%;
+    }
+
+    figcaption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      color: $color-secondary;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.5s;
+      backface-visibility: hidden;
+    }
+
+    &:hover figcaption {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      cursor: default;
+    }
+
+    &:hover img {
+      transform: scale(0.9);
+      filter: blur(3px) brightness(80%);
+    }
+  }
+}
+
+.bio__text {
+  position: relative;
+  max-width: 40%;
+  text-align: justify;
+  margin: 3rem auto 0;
+
+  animation: zoomInDown 1s ease-in;
+  animation-fill-mode: backwards;
+
+  & p:not(:last-child) {
+    margin-bottom: 0.8rem;
+  }
+}
