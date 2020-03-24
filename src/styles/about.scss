@@ -110,3 +110,27 @@
     margin-bottom: 0.8rem;
   }
 }
+
+@media (max-width: 1200px) {
+  .bio__text {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bio__text {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .bio__text {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .bio__text {
+    max-width: 100%;
+  }
+}
