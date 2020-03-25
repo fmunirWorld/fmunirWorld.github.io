@@ -1,0 +1,100 @@
+@import "../styles/variables";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel {
+  min-width: 33vw;
+}
+
+.carousel__header {
+  margin-bottom: 2rem;
+  text-align: left;
+
+  .title {
+    margin-bottom: 0.2rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  .subtitle {
+    font-size: 1.45rem;
+    opacity: 0.9;
+  }
+
+  animation: fadeIn 0.1s ease-in;
+  animation-fill-mode: backwards;
+}
+
+.carousel__body {
+  position: relative;
+  min-height: 45vh;
+  vertical-align: middle;
+
+  border-top: 1px solid rgba($color-secondary, 0.3);
+  border-bottom: 1px solid rgba($color-secondary, 0.3);
+  padding: 2.5rem 0;
+}
+
+.carousel__footer {
+  margin-top: 1rem;
+  text-align: left;
+
+  button {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 0.1rem solid rgba($color-secondary, 0.75);
+    border-radius: 50%;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    color: $color-secondary;
+    opacity: 0.5;
+    transform: scale(0.95);
+
+    &:hover {
+      cursor: pointer;
+      background-color: transparent;
+      border: 0.1rem solid rgba($color-secondary, 0.7);
+      outline: none;
+      transform: scale(1);
+    }
+  }
+
+  span {
+    float: right;
+    font-size: 1.3rem;
+    font-style: oblique;
+    opacity: 0.75;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel {
+    min-width: 45vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    min-width: 55vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel {
+    min-width: 65vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel {
+    min-width: 80vw;
+  }
+}
