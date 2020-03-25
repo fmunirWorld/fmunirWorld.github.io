@@ -18,28 +18,23 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `fmunirworld`,
+        name: `Fahad Munir`,
         short_name: `fmunir`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        background_color: `#fdfffc`,
+        theme_color: `#222733`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`,
       },
     },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Josefin Sans:300,400`,
-          `Fira Sans:300,400`
-        ],
+        fonts: [`Josefin Sans:300,400`, `Fira Sans:300,400`],
         display: "swap",
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
