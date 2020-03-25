@@ -1,4 +1,4 @@
-class TxtType {
+export default class Typewrite {
   constructor(el, toRotate, period) {
     this.toRotate = toRotate
     this.el = el
@@ -34,12 +34,3 @@ class TxtType {
     setTimeout(() => that.tick(), delta)
   }
 }
-
-setTimeout(() => {
-  var element = document.getElementById("typewrite")
-  const toRotate = element.getAttribute("data-type")
-  const period = element.getAttribute("data-period")
-  if (toRotate) {
-    new TxtType(element, JSON.parse(toRotate), period)
-  }
-}, 1000)

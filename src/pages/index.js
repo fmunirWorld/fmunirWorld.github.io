@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 import { FaLinkedinIn, FaGithub, FaTwitter, FaArrowRight } from "react-icons/fa"
 import SourcererIc from "../images/svg/sourcerer.svg"
 import "../styles/index.scss"
-import "../scripts/typewrite"
 
 const ListLink = props => (
   <li>
@@ -23,71 +22,84 @@ const ListLink = props => (
   </li>
 )
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div class="home__title">
-      <h1>
-        f
-        <span
-          id="typewrite"
-          class="typewrite-text"
-          data-period="2000"
-          data-type='[ "ahad " ]'
-        ></span>
-        munir
-      </h1>
-    </div>
-    <div class="home__subtitle">
-      <div class="home__subtitle__container">
-        <p class="text">Hey. I'm a</p>
-        <ul class="list">
-          <li class="item">student !</li>
-          <li class="item">web designer !</li>
-          <li class="item">web developer !</li>
-          <li class="item">photographer !</li>
+class IndexPage extends React.Component {
+  componentDidMount() {
+    const Typewrite = require("../scripts/typewrite").default
+    let element = document.getElementById("typewrite")
+    const toRotate = element.getAttribute("data-type")
+    const period = element.getAttribute("data-period")
+    if (toRotate) {
+      new Typewrite(element, JSON.parse(toRotate), period)
+    }
+  }
+  render() {
+    return (
+      <Layout>
+        <SEO title="Home" />
+        <div class="home__title">
+          <h1>
+            f
+            <span
+              id="typewrite"
+              class="typewrite-text"
+              data-period="2000"
+              data-type='[ "ahad " ]'
+            ></span>
+            munir
+          </h1>
+        </div>
+        <div class="home__subtitle">
+          <div class="home__subtitle__container">
+            <p class="text">Hey. I'm a</p>
+            <ul class="list">
+              <li class="item">student !</li>
+              <li class="item">web designer !</li>
+              <li class="item">web developer !</li>
+              <li class="item">photographer !</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <ul class="social-links-list">
+          <ListLink
+            to="https://linkedin.com/in/fmunirworld/"
+            title="fmunir's resume on LinkedIn"
+          >
+            <FaLinkedinIn />
+          </ListLink>
+
+          <ListLink
+            to="https://github.com/fmunirWorld/"
+            title="@fmunirWorld on Github"
+          >
+            <FaGithub />
+          </ListLink>
+
+          <ListLink
+            to="https://sourcerer.io/fmunirworld/"
+            title="fmunir's Sourcerer profile"
+          >
+            <img src={SourcererIc} alt="" />
+          </ListLink>
+
+          <ListLink
+            to="https://twitter.com/fmunirworld/"
+            title="@fmunirWorld on twitter"
+          >
+            <FaTwitter />
+          </ListLink>
+
+          <li>
+            <Link to="/about" class="item">
+              <FaArrowRight />
+            </Link>
+          </li>
         </ul>
-      </div>
-    </div>
-
-    <hr />
-
-    <ul class="social-links-list">
-      <ListLink
-        to="https://linkedin.com/in/fmunirworld/"
-        title="fmunir's resume on LinkedIn"
-      >
-        <FaLinkedinIn />
-      </ListLink>
-
-      <ListLink
-        to="https://github.com/fmunirWorld/"
-        title="@fmunirWorld on Github"
-      >
-        <FaGithub />
-      </ListLink>
-
-      <ListLink
-        to="https://sourcerer.io/fmunirworld/"
-        title="fmunir's Sourcerer profile"
-      >
-        <img src={SourcererIc} alt="" />
-      </ListLink>
-
-      <ListLink
-        to="https://twitter.com/fmunirworld/"
-        title="@fmunirWorld on twitter"
-      >
-        <FaTwitter />
-      </ListLink>
-
-      <li>
-        <Link to="/about" class="item">
-          <FaArrowRight />
-        </Link>
-      </li>
-    </ul>
-  </Layout>
-)
+      </Layout>
+    )
+  }
+}
 
 export default IndexPage
