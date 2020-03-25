@@ -39,9 +39,9 @@ const NowPage = () => (
       subtitle="This page is the most up to date list of what I’m working on, thinking about and doing right now."
       content={
         <ul>
-          {NowList.map(item => {
+          {NowList.map((item, index) => {
             return (
-              <li>
+              <li key={index}>
                 <span>{item.leader}: </span>
                 {item.detail}
               </li>

@@ -10,7 +10,7 @@
 }
 
 .segment {
-  max-width: 70%;
+  max-width: 37.5vw;
   max-height: 75vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -83,20 +83,26 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .segment {
+    max-width: 50vw;
+  }
+}
+
 @media (max-width: 768px) {
   .segment {
-    max-width: 80%;
+    max-width: 65vw;
   }
 }
 
 @media (max-width: 576px) {
   .segment {
-    max-width: 90%;
+    max-width: 75vw;
   }
 }
 
 @media (max-width: 400px) {
   .segment {
-    max-width: 100%;
+    max-width: 100vw;
   }
 }
