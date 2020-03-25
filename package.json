@@ -23,6 +23,7 @@
     "react-icons": "^3.9.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -37,10 +38,11 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fmunirWorld/fmunirworld"
+    "url": "https://github.com/fmunirworld/fmunirworld.github.io"
   }
 }
