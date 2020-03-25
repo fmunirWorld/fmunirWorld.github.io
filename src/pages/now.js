@@ -27,8 +27,11 @@ const NowList = [
       </ul>
     ),
   },
-  { leader: "Looking for", detail: "No more projects or responsibilities." },
-  { leader: "Last updated", detail: "March 22, 2020" },
+  {
+    leader: "Looking for",
+    detail: "Freelance opportunities in web/mobile app development.",
+  },
+  { leader: "Last updated", detail: "March 26, 2020" },
 ]
 
 const NowPage = () => (

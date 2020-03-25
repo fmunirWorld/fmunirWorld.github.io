@@ -15,11 +15,11 @@ const Header = () => (
   <nav class="navigation-wrapper">
     <ul class="site-nav">
       <ListLink to="/">Home</ListLink>
-      <ListLink to="/about">About</ListLink>
-      <ListLink to="/now">Now</ListLink>
-      <ListLink to="/resume">Resume</ListLink>
-      <ListLink to="/projects">Projects</ListLink>
-      <ListLink to="/blog">Blog</ListLink>
+      <ListLink to="/about/">About</ListLink>
+      <ListLink to="/now/">Now</ListLink>
+      <ListLink to="/resume/">Resume</ListLink>
+      <ListLink to="/projects/">Projects</ListLink>
+      <ListLink to="/blog/">Blog</ListLink>
     </ul>
   </nav>
 )

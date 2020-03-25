@@ -55,7 +55,7 @@ class IndexPage extends React.Component {
               <li class="item">student !</li>
               <li class="item">web designer !</li>
               <li class="item">web developer !</li>
-              <li class="item">photographer !</li>
+              <li class="item">devops engineer !</li>
             </ul>
           </div>
         </div>
@@ -92,7 +92,7 @@ class IndexPage extends React.Component {
           </ListLink>
 
           <li>
-            <Link to="/about" class="item">
+            <Link to="/about/" class="item">
               <FaArrowRight />
             </Link>
           </li>

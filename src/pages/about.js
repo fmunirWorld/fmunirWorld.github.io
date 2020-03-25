@@ -23,7 +23,7 @@ const AboutPage = () => (
       <p>He is very bad at saying "no" to a challenge.</p>
       <p>
         If you're looking for someone people-driven, creative, and ready to
-        learn, please don't hesitate to contact him at
+        learn, please don't hesitate to contact him at&nbsp;
         <a
           class="link-primary"
           href="mailto:fmunir923@gmail.com"
