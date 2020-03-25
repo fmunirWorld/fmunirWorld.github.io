@@ -15,7 +15,7 @@ const NowList = [
     ),
   },
   { leader: "Watching", detail: "The Americans" },
-  { leader: "Learning about", detail: "Gatsby" },
+  { leader: "Learning about", detail: "Load testing" },
   {
     leader: "Working on",
     detail: (
