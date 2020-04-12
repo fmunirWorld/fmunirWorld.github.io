@@ -26,7 +26,7 @@ const AboutPage = () => (
         learn, please don't hesitate to contact him at&nbsp;
         <a
           class="link-primary"
-          href="mailto:fmunir923@gmail.com"
+          href="mailto:fmunirdev@gmail.com"
           title="Email him!"
         >
           fmunir923@gmail.com

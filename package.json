@@ -1,9 +1,9 @@
 {
-  "name": "fmunirworld",
+  "name": "fmunirdev",
   "private": true,
   "description": "Personal site for Fahad Munir",
   "version": "0.1.0",
-  "author": "Fahad Munir <fmunir923@gmail.com>",
+  "author": "Fahad Munir <fmunirdev@gmail.com>",
   "dependencies": {
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
@@ -46,6 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fmunirworld/fmunirworld.github.io"
+    "url": "https://github.com/fmunirdev/fmunirdev.github.io"
   }
 }

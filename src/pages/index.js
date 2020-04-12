@@ -64,14 +64,14 @@ class IndexPage extends React.Component {
 
         <ul class="social-links-list">
           <ListLink
-            to="https://linkedin.com/in/fmunirworld/"
+            to="https://linkedin.com/in/fmunirdev/"
             title="fmunir's resume on LinkedIn"
           >
             <FaLinkedinIn />
           </ListLink>
 
           <ListLink
-            to="https://github.com/fmunirWorld/"
+            to="https://github.com/fmunirdev/"
             title="@fmunirWorld on Github"
           >
             <FaGithub />
@@ -85,7 +85,7 @@ class IndexPage extends React.Component {
           </ListLink>
 
           <ListLink
-            to="https://twitter.com/fmunirworld/"
+            to="https://twitter.com/fmunirdev/"
             title="@fmunirWorld on twitter"
           >
             <FaTwitter />

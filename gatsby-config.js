@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Fahad Munir - Freelance Web Developer`,
-    description: `Fahad Munir is a Computer Science student and full stack web and mobile app developer.`,
-    author: `@fmunirworld`,
+    description: `Fahad Munir is a Computer Science student and full stack web & mobile app developer.`,
+    author: `@fmunirdev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

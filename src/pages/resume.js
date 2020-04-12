@@ -66,7 +66,7 @@ class ResumePage extends React.Component {
             <p>University of Gujrat, PK, October 2016 &ndash; Current</p>
             <a
               class="link-primary"
-              href="https://www.linkedin.com/in/fmunirworld/"
+              href="https://www.linkedin.com/in/fmunirdev/"
               title="fmunir's resume on LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
@@ -82,7 +82,7 @@ class ResumePage extends React.Component {
             </p>
             <a
               class="link-primary"
-              href="https://drive.google.com/open?id=1paYoKfr39J-4-mdSN7Iqo2emV0LgT0dD"
+              href="https://drive.google.com/open?id=1TcqwEnQSHhEGN8Ma1lpS-Wbz712l9_mv"
               title="fmunir's resume"
               target="_blank"
               rel="noopener noreferrer"
