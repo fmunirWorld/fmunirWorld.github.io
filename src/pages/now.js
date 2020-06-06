@@ -5,7 +5,11 @@ import Layout from "../components/layout"
 import Segment from "../components/segment"
 
 const NowList = [
-  { leader: "Life", detail: "Spending as much time with my family as I can." },
+  {
+    leader: "Life",
+    detail:
+      "Desperately waiting for my graduation to complete, delayed due to the Coronavirus situation.",
+  },
   {
     leader: "Reading",
     detail: (
@@ -14,24 +18,25 @@ const NowList = [
       </>
     ),
   },
-  { leader: "Watching", detail: "The Americans" },
-  { leader: "Learning about", detail: "Load testing" },
+  { leader: "Watching", detail: "Outlander" },
+  { leader: "Learning about", detail: "full-stack Serverless apps" },
   {
-    leader: "Working on",
+    leader: "Working with",
     detail: (
       <ul>
         <li>
-          Web and mobile app based solutions to digitalize UoG Boys Hosels
-          management system.
+          JAMstack ( Gatsby, Shopify and Netlify ) to create modern web
+          storefront for headless ecommerce.
         </li>
+        <li>GitHub Actions and AWS to create better CI / CD Workflows.</li>
       </ul>
     ),
   },
-  {
-    leader: "Looking for",
-    detail: "Freelance opportunities in web/mobile app development.",
-  },
-  { leader: "Last updated", detail: "March 26, 2020" },
+  // {
+  //   leader: "Looking for",
+  //   detail: "Freelance opportunities in web/mobile app development.",
+  // },
+  { leader: "Last updated", detail: "June 06, 2020" },
 ]
 
 const NowPage = () => (

@@ -1,7 +1,7 @@
 {
   "name": "fmunirdev",
   "private": true,
-  "description": "Personal site for Fahad Munir",
+  "description": "Personal website of Fahad Munir",
   "version": "0.1.0",
   "author": "Fahad Munir <fmunirdev@gmail.com>",
   "dependencies": {

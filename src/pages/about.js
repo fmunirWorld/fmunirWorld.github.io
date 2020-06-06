@@ -17,8 +17,9 @@ const AboutPage = () => (
     </div>
     <div class="bio__text">
       <p>
-        Fahad Munir is a web designer / developer based in Lahore, Pakistan. He
-        is currently studying Computer Science at University of Gujrat.
+        Fahad Munir is a full-stack web and mobile app developer based in
+        Lahore, Pakistan. He is currently studying Computer Science at
+        University of Gujrat.
       </p>
       <p>He is very bad at saying "no" to a challenge.</p>
       <p>
@@ -29,7 +30,7 @@ const AboutPage = () => (
           href="mailto:fmunirdev@gmail.com"
           title="Email him!"
         >
-          fmunir923@gmail.com
+          fmunirdev@gmail.com
         </a>
       </p>
     </div>

@@ -3,6 +3,7 @@ module.exports = {
     title: `Fahad Munir - Freelance Web Developer`,
     description: `Fahad Munir is a Computer Science student and full stack web & mobile app developer.`,
     author: `@fmunirdev`,
+    siteUrl: `https://fmunirdev.github.io`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
