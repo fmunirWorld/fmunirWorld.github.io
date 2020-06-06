@@ -2,9 +2,9 @@ name: GitHub Pages CI/CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [ devel ]
   pull_request:
-    branches: [ master ]
+    branches: [ devel ]
 
 jobs:
   build:
@@ -26,4 +26,4 @@ jobs:
       with:
         accessToken: ${{ secrets.ACCESS_TOKEN }}
         srcDir: public
-        destBranch: gh-pages
+        destBranch: master
