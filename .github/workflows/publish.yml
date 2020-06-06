@@ -1,0 +1,27 @@
+name: GitHub Pages CI/CD
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: Install dependencies
+      run: yarn
+    - name: Build and deploy
+      uses: demurgos/ga-deploy-git@v1
+      with:
+        accessToken: ${{ secrets.ACCESS_TOKEN }}
+        srcDir: public
+        destBranch: gh-pages
