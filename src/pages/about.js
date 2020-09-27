@@ -18,8 +18,9 @@ const AboutPage = () => (
     <div class="bio__text">
       <p>
         Fahad Munir is a full-stack web and mobile app developer based in
-        Lahore, Pakistan. He is currently studying Computer Science at
-        University of Gujrat.
+        Lahore, Pakistan. He specializes in various web technologies mainly
+        JavaScript ( Angular / React / NodeJS ) and Python ( Django / Flask ),
+        and has a passion for DevOps and Cloud-native app development.
       </p>
       <p>He is very bad at saying "no" to a challenge.</p>
       <p>

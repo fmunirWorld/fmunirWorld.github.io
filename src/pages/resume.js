@@ -19,7 +19,7 @@ class ResumePage extends React.Component {
           id="resume"
           title="Resume"
           subtitle="Find out what I've accomplished over the years"
-          lastUpdated="June 06, 2020"
+          lastUpdated="September 27, 2020"
         >
           <CarouselItem title="Technologies">
             <div class="carousel__item__content__list__wrapper">
@@ -28,8 +28,9 @@ class ResumePage extends React.Component {
                 <ul>
                   <li>HTML / CSS ( SASS )</li>
                   <li>JavaScript / AJAX / jQuery</li>
-                  <li>Angular / React</li>
-                  <li>Gatsby / Shopify</li>
+                  <li>Angular / Ionic</li>
+                  <li>React / Gatsby</li>
+                  <li>Node.js / Express.js</li>
                   <li>Python ( Django / Flask )</li>
                   <li>Microservices ( Polyglot )</li>
                   <li>Version Control ( Git )</li>
@@ -41,7 +42,6 @@ class ResumePage extends React.Component {
               <div class="list">
                 <h3>HAVE EXPERIENCE WITH</h3>
                 <ul>
-                  <li>Node.js / Express.js</li>
                   <li>PHP / Laravel / WP</li>
                   <li>Redis / Celery</li>
                   <li>Android / Ionic</li>
@@ -53,7 +53,7 @@ class ResumePage extends React.Component {
             </div>
           </CarouselItem>
           <CarouselItem title="Work Experience">
-            <h2>INTERN &ndash; FRONT-END DEVELOPER</h2>
+            <h2>FULL STACK ENGINEER</h2>
             <p>Accelerone / Remote, May 2020 &ndash; Current</p>
 
             <hr />
@@ -72,7 +72,7 @@ class ResumePage extends React.Component {
           </CarouselItem>
           <CarouselItem title="Education">
             <h2>Bachelor of Science in Computer Science</h2>
-            <p>University of Gujrat, PK, October 2016 &ndash; Current</p>
+            <p>University of Gujrat, PK, October 2016 &ndash; August 2020</p>
             <a
               class="link-primary"
               href="https://www.linkedin.com/in/fmunirdev/"

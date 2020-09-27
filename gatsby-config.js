@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Fahad Munir - Freelance Web Developer`,
-    description: `Fahad Munir is a Computer Science student and full stack web & mobile app developer.`,
-    author: `@fmunirdev`,
+    title: `Fahad Munir — Full Stack Web Developer`,
+    description: `A full-stack engineer who specializes in various web technologies mainly JavaScript (Angular/React/NodeJS) and Python (Django/Flask)`,
+    author: `Fahad Munir (fmunirdev@gmail.com)`,
     siteUrl: `https://fmunirdev.github.io`,
   },
   plugins: [
@@ -26,6 +26,9 @@ module.exports = {
         theme_color: `#222733`,
         display: `standalone`,
         icon: `src/images/favicon.png`,
+        icon_options: {
+          purpose: `maskable`,
+        },
       },
     },
     `gatsby-plugin-sass`,

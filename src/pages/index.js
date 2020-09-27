@@ -72,7 +72,7 @@ class IndexPage extends React.Component {
 
           <ListLink
             to="https://github.com/fmunirdev/"
-            title="@fmunirWorld on Github"
+            title="@fmunirdev on Github"
           >
             <FaGithub />
           </ListLink>
@@ -86,13 +86,13 @@ class IndexPage extends React.Component {
 
           <ListLink
             to="https://twitter.com/fmunirdev/"
-            title="@fmunirWorld on twitter"
+            title="@fmunirdev on twitter"
           >
             <FaTwitter />
           </ListLink>
 
           <li>
-            <Link to="/about/" class="item">
+            <Link to="/about/" class="item" title="Learn more about me!">
               <FaArrowRight />
             </Link>
           </li>
