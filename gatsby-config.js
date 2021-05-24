@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Fahad Munir — Full Stack Web Developer`,
-    description: `A full-stack engineer who specializes in various web technologies mainly JavaScript (Angular/React/NodeJS) and Python (Django/Flask)`,
+    title: `Fahad Munir — Software Engineer — Web, Mobile & Cloud`,
+    description: `A full stack developer who specializes in various technologies ( mainly JavaScript / Python ) and DevOps tools.`,
     author: `Fahad Munir (fmunirdev@gmail.com)`,
     siteUrl: `https://fmunirdev.github.io`,
   },
@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Fahad Munir`,
-        short_name: `fmunir`,
+        short_name: `fmunirdev`,
         start_url: `/`,
         background_color: `#fdfffc`,
         theme_color: `#222733`,
@@ -39,7 +39,6 @@ module.exports = {
         display: "swap",
       },
     },
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

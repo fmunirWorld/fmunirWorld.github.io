@@ -7,23 +7,26 @@ import Segment from "../components/segment"
 const NowList = [
   {
     leader: "Life",
-    detail: "Landed my first job as a full stack engineer.",
+    detail: "Working as a Software Engineer.",
   },
   {
     leader: "Reading",
-    detail: "The Path to Cloud Native Applications",
+    detail:
+      "Introduction to Blockchain with Case Studies by Zeeshan ul Hassan Usmani",
   },
   // { leader: "Watching", detail: "Dark" },
-  { leader: "Learning about", detail: "JAMstack" },
+  {
+    leader: "Learning about",
+    detail: "GraphQL and exploring different clients Apollo / Relay",
+  },
   {
     leader: "Working with",
     detail: (
       <ul>
         <li>
-          JAMstack ( Gatsby and Netlify ) to create modern web storefront for
-          headless ecommerce.
+          JAMstack ( Gatsby ) to create fast, high performance branding website
+          based on headless CMSs.
         </li>
-        <li>GitHub Actions and AWS to create better CI / CD Workflows.</li>
       </ul>
     ),
   },
@@ -31,7 +34,7 @@ const NowList = [
   //   leader: "Looking for",
   //   detail: "Freelance opportunities in web/mobile app development.",
   // },
-  { leader: "Last updated", detail: "September 27, 2020" },
+  { leader: "Last updated", detail: "May 24, 2021" },
 ]
 
 const NowPage = () => (

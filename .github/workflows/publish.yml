@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: yarn
     - name: Build Gatsby site
-      run: yarn run build
+      run: yarn build
     - name: Publish to GitHub Pages
       uses: demurgos/ga-deploy-git@v1
       with:
