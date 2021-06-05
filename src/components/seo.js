@@ -23,7 +23,9 @@ function SEO({ title, meta }) {
   )
 
   const { description, author, siteUrl } = site.siteMetadata
-  title = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title
+  title = title
+    ? `${title} — ${site.siteMetadata.title}`
+    : site.siteMetadata.title
 
   return (
     <Helmet
