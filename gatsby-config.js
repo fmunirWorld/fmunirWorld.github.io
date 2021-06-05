@@ -33,13 +33,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Josefin Sans:300,400`, `Fira Sans:300,400`],
-        display: "swap",
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-168685654-1",
