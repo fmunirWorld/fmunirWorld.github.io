@@ -17,7 +17,7 @@ const AboutPage = () => (
     </div>
     <div class="bio__text">
       <p>
-        Fahad Munir is a Software Engineer based in Lahore, Pakistan. He has
+        Fahad Munir is a full stack developer based in Lahore, Pakistan. He has
         more than two years of experience in web and mobile app development. He
         mainly works with JavaScript and Python based technologies but always
         willing to learn any related tech stack.
