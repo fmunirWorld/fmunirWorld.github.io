@@ -35,7 +35,7 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home" />
+        <SEO />
         <div class="home__title">
           <h1>
             f

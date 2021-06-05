@@ -8,7 +8,7 @@ const BlogPage = () => (
   <Layout>
     <SEO title="Blog" />
     <Segment
-      title="Posts by fmunir"
+      title="Posts by Fahad"
       subtitle="I'm no author but I do like writing the occasional blog post. Here are some of the posts I have done:"
       content={
         <ul>

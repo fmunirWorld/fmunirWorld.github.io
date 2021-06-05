@@ -8,7 +8,7 @@ const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />
     <Segment
-      title="Projects by fmunir"
+      title="Projects by Fahad"
       subtitle="The best way to learn is by doing and that means building things. One of my weaknesses is that I try to be a perfectionist and procrastinate. Thankfully, programming doesn't allow for that. So here is a growing list of projects I am working on:"
       content={
         <ul>
