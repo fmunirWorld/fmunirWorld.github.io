@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Fahad Munir — Software Engineer — Web, Mobile & Cloud`,
-    description: `A full stack developer who specializes in various technologies ( mainly JavaScript / Python ) and DevOps tools.`,
+    description: `A full stack developer who specializes in various web technologies (mainly JavaScript/Python), DevOps tools, and Cloud platforms (AWS). Based in Lahore, Pakistan.`,
     author: `Fahad Munir (fmunirdev@gmail.com)`,
     siteUrl: `https://fmunirdev.github.io`,
   },
@@ -43,6 +43,13 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-168685654-1",
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
   ],
