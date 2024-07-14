@@ -1,0 +1,160 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 4rem;
+  min-height: 100vh;
+}
+
+.main h1 {
+  font-family: var(--font-josefin-sans);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.main strong {
+  font-weight: 600;
+}
+
+.description {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  gap: inherit;
+}
+
+.description p {
+  line-height: 1.5;
+}
+
+.avatar figure {
+  position: relative;
+  margin: 0 auto;
+
+  animation: bounceIn 0.75s ease-in;
+  animation-fill-mode: backwards;
+}
+
+.avatar figure img {
+  backface-visibility: hidden;
+  transition: all 0.5s;
+  border-radius: 50%;
+}
+
+.avatar figure figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: #fdfffc;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+
+.avatar figure:hover img {
+  transform: scale(0.9);
+  filter: blur(3px) brightness(80%);
+}
+
+.avatar figure:hover figcaption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  cursor: default;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.row a {
+  padding: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .main {
+    padding: 2rem 1.5rem;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .avatar figure img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .avatar figure figcaption {
+    font-size: 1rem;
+  }
+
+  .row a {
+    padding: 0.75rem;
+  }
+
+  .row a svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
