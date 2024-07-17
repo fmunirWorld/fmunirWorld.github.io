@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 import { inter, josefin_sans } from "./fonts";
 import "./globals.css";
@@ -16,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${josefin_sans.variable}`}>
+      <GoogleTagManager gtmId="G-CBCG8T24WL" />
       <body>{children}</body>
     </html>
   );
