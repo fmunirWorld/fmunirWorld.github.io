@@ -19,7 +19,7 @@ export default function Home() {
           <figcaption>Fahad Munir</figcaption>
         </figure>
       </div>
-      <h1>
+      <h1 className={styles.heading}>
         Hey. I&apos;m{" "}
         <strong>
           Fahad Munir &ndash;{" "}

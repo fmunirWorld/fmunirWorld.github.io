@@ -9,13 +9,13 @@
   min-height: 100vh;
 }
 
-.main h1 {
+.heading {
   font-family: var(--font-josefin-sans);
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 1rem;
 }
 
-.main strong {
+.heading strong {
   font-weight: 600;
 }
 
