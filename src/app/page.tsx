@@ -90,6 +90,14 @@ export default function Home() {
           <Icon name="email" />
         </a>
         <a
+          href="https://calendly.com/fmunirdev/consultation"
+          title="Schedule a Call with Fahad"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="calendly" />
+        </a>
+        <a
           href="https://github.com/fmunirdev/"
           title="@fmunirdev on GitHub"
           target="_blank"
