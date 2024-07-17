@@ -83,7 +83,7 @@ export default function Home() {
         </a>
         <a
           href="mailto:fmunirdev@gmail.com"
-          title="Email address"
+          title="Drop me an email"
           target="_blank"
           rel="noopener noreferrer"
         >
