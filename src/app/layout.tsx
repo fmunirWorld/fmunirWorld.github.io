@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Fahad Munir — Senior Software Developer — Backend",
   description:
-    "A software developer based in Lahore, Pakistan, specializes JavaScript, Python, and the Cloud (AWS)"
+    "Top-tier software development talent, proficient in JavaScript/TypeScript, Python, and cloud technologies, delivers web applications, scalable backend systems, and data-driven solutions."
 };
 
 export default function RootLayout({
