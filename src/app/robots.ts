@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://fmunirdev.github.io/sitemap.xml"
+    sitemap: "https://fmunir.dev/sitemap.xml"
   };
 }
