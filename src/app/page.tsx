@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.avatar}>
         <figure>
           <Image
-            src="/profile.jpg"
+            src="/profile.webp"
             alt="Profile picture of Fahad Munir"
             loading="lazy"
             blurDataURL="data:..."
